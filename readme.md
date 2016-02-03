@@ -43,11 +43,11 @@ Review Git Basics
 * Provides an issue tracking system
 * Place to Show Work off to Employers
 
-## Git Remote: Upstream, Fetch, and Pull (10 min)
+## Git Remote: Upstream and Pull (10 min)
 
 <!--Does Anyone Remember How to Add a Remote Git Repo?-->
 
-![Git Pull Upstream](git06.jpg)
+![Git Pull Upstream](http://www.lornajane.net/wp-content/uploads/2012/06/sync.png)
 
 After we have already forked and cloned someone else's repository onto our local machine - we need a way to be able to update our local copy with any changes being made to that master repository.
 
