@@ -65,7 +65,7 @@ This remote is where we can pull from at any time, but do not have permission to
 
 <!--SHOW TRYING TO PUSH UP TO MASTER, DON'T PUSH UP -->
 
-## YOU-DO Fork and Clone the Curriculum Repo (5 min)
+## YOU-DO: Fork and Clone the Curriculum Repo (5 min)
 
 Students should visit the [Curriculum](https://github.com/ga-dc/curriculum)'s page
 
@@ -193,7 +193,7 @@ Let's Review our Pull-Request, and Merge it back into the Master Branch. TADA! N
 
 ## Break (10 min)
 
-## OverView of GitHub Workflow(5 min)
+## Overview of GitHub Workflow (5 min)
 > From [Github Guides](https://guides.github.com/introduction/flow/)
 
 To Recap, In Software Development, Github is very useful in managing and tracking updates and changes to our code.
