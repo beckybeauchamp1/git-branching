@@ -101,30 +101,31 @@ In this example, we have a github practice repository, but it's completely empty
 
 ### I-DO: Create a Github Issue
 
-Now this issue has a permanent home (URL) that you can reference even after it is closed. Next, we need to work towards adding a README and closing this issue. Let's make a new branch....
+For this lesson, I will be working with this github repo: https://github.com/beckybeauchamp1/I_Love_Github
+
+Now this issue has a permanent URL that you can reference even after it is closed. Next, we need to work towards adding a README and closing this issue. Let's make a new branch....
 
 ### Think/Pair/Share-1/3/6: Why Branches?  (15 min)
 
-We are going to start with reading [Git Branching - Basic Branching and Merging](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging/).  This is an introduction to branching.
+Instructions: We are going to start with reading [Git Branching - Basic Branching and Merging](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging/).  This is an introduction to branching.
 
-Instructions: Take 5 minutes to read up to Basic Merge Conflicts and STOP THERE (5 min).
-
-Take another minute to think about why branches/branching are important. Now, turn and talk with your neighbor and discuss your thoughts.
-
-Now, turn and share with your neighbor your thoughts, and we'll share what we feel is important.
+* Take 5 minutes to read up to Basic Merge Conflicts and STOP THERE (5 min).
+* Now, take another minute to think about why branches/branching are important. Now, turn and talk with your neighbor and discuss your thoughts.
+* Now, turn and share with your neighbor your thoughts, and we'll share what we feel is important.
 
 Q. Why is branching an important part of git?
 
 ---
 > A. Branches are useful for many reasons, but some of the most common ones:
 
-> 1. EXPERIEMENTATION -To allow experimentation. By switching to a new branch, we can experiment,
+>
+1. Experimentation -To allow experimentation. By switching to a new branch, we can experiment,
 and if the experiment fails, we can delete it and easily switch back to master
 (or another branch of our choice). If it succeeds, we can merge those changes
 into master.
-2. WORKFLOW/COLLABORATION-To allow work to proceed on multiple features (or by multiple people) without
+2. Collaboration-To allow work to proceed on multiple features (or by multiple people) without
 interfering. When a feature is complete, it can be merged back into master.
-3. EASILY FIX BUGS-To allow easy bug fixes on a stable version while features are being developed.
+3. Easily Fix Bugs-To allow easy bug fixes on a stable version while features are being developed.
 
 <!--NEED VISUAL TOOL LESSON BRANCHES-->
 
