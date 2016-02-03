@@ -7,6 +7,7 @@
 * Fork, Clone, and Add WDI Curriculum as an Upstream Repo
 * Describe Github Features including Issues, Branches, and Pull-Requests
 * Fork and Clone Git Tricks Repo, Create a new Branch, and Make a Pull-Request
+* Create an Issue for this Lesson Repo
 
 ## Framing (10 min)
 
@@ -34,6 +35,10 @@ Review Git Basics
 * It's literally a "hub" for storing Git repositories and a social platform for people to collaborate and work on open source projects
 * Github is not only used for software development. It can be used for any collaboration projects. You can store text documents or other file types.
 * Most of repos on Github are Public. Github is Open Source to encourage collaboration
+
+## Turn and Talk:  Given what we just discussed, why is Github Important?  (5 min)
+
+Instructions: Turn and Talk to your neighbor for a minute and share your ideas. After a minute is up, we will discuss as a class your thoughts
 
 ### Why do we use Github? (5 min)
 
@@ -95,7 +100,7 @@ $ git pull origin upstream
 
 <!--Okay, we are now going to be exploring features in github, everyone please title laptop screens-->
 
-### Github Issues (5 min)
+### Github Issues (10 min)
 
 An Issue is a note on a repo regarding some matter that needs attention. It could be a bug, a suggestion for a new feature, a question about the repo or code, etc! On GitHub you can also label, search and assign issues, which help with managing projects.
 
@@ -230,7 +235,7 @@ Make changes/commits commits locally, then push your branch up to our remote rep
 6. Merge Branch into Master
 
 
-## YOU-DO - Pushing and PRs from Branches (10 min)
+## YOU-DO - Pushing and PRs from Branches (15 min)
 
 Many OSS projects request that you create pull requests from a non-master branch.
 

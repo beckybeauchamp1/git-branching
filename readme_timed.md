@@ -2,11 +2,12 @@
 
 ## Learning Objectives
 
-* Describe the differences between Git and Github
+* Describe the Differences between Git and Github
 * Explain what is an Upstream Repo
 * Fork, Clone, and Add WDI Curriculum as an Upstream Repo
-* Describe Github Features including Issues, Branches, and Pull Requests
-* Fork Github quiz repo, Create a solution_quiz_branch, and Create a Pull Request
+* Describe Github Features including Issues, Branches, and Pull-Requests
+* Fork and Clone Git Tricks Repo, Create a new Branch, and Make a Pull-Request
+* Create an Issue for this Lesson Repo
 
 ## Framing (10 min; 10:00-10:10)
 
@@ -23,7 +24,7 @@ Review Git Basics
 1. What is the most common workflow for creating save points while working locally?
 2. What commands are used to share changes (commits) between repos?
 3. Describe the fork/clone model, and how it is used for HW submission.
-4. What are the differences between git and github?
+4. In your Own Words, What are the differences between git and github?
 
 <!--Introduction To New Material-->
 
@@ -35,7 +36,11 @@ Review Git Basics
 * Github is not only used for software development. It can be used for any collaboration projects. You can store text documents or other file types.
 * Most of repos on Github are Public. Github is Open Source to encourage collaboration
 
-### Why do we use Github? (5 min; 10:20-10:25)
+## Turn and Talk:  Given what we just discussed, why is Github Important?  (5 min; 10:20-10:25)
+
+Instructions: Turn and Talk to your neighbor for a minute and share your ideas. After a minute is up, we will discuss as a class your thoughts
+
+### Why do we use Github? (5 min; 10:25-10:30)
 
 * Visual Interface to See and Navigate Through our Repositories
 * Provides a Remote Backup/Copy of our files
@@ -43,11 +48,11 @@ Review Git Basics
 * Provides an issue tracking system
 * Place to Show Work off to Employers
 
-## Git Remote: Upstream, Fetch, and Pull (10 min; 10:25-10:35)
+## Git Remote: Upstream and Pull (10 min; 10:30-10:40)
 
 <!--Does Anyone Remember How to Add a Remote Git Repo?-->
 
-![Git Pull Upstream](git06.jpg)
+![Git Pull Upstream](http://www.lornajane.net/wp-content/uploads/2012/06/sync.png)
 
 After we have already forked and cloned someone else's repository onto our local machine - we need a way to be able to update our local copy with any changes being made to that master repository.
 
@@ -65,7 +70,7 @@ This remote is where we can pull from at any time, but do not have permission to
 
 <!--SHOW TRYING TO PUSH UP TO MASTER, DON'T PUSH UP -->
 
-## YOU-DO Fork and Clone the Curriculum Repo (5 min; 10:35-10:40)
+## YOU-DO - Fork and Clone the Curriculum Repo (5 min; 10:40-10:45)
 
 Students should visit the [Curriculum](https://github.com/ga-dc/curriculum)'s page
 
@@ -73,7 +78,7 @@ Fork the Curriculum Repo to your personal account. Clone your fork to your compu
 
 NOTE: If you already have a curriculum folder in your ~/wdi folder, delete or rename it before you clone.
 
-## YOU-DO: Setup Upstream for Curriculum Repo (10 min; 10:40-10:50)
+## YOU-DO - Setup Upstream for Curriculum Repo (10 min; 10:45-10:55)
 1. Students go back to the [Curriculum](https://github.com/ga-dc/curriculum)'s page and copy the ssh clone url to the clipboard
 2. In our terminal, change directories into our local curriculum directory
 ```
@@ -89,46 +94,50 @@ $ cd curriculum
 $ git pull origin upstream
 ```
 
-## Break (10 min; 10:50-11:00)
+## Break (10 min; 10:55-11:05)
 
 ## Github Features: Issues, Branches, Pull-Requests, and Merging
 
-### Creating Issues on Github (5 min; 11:00-11:05)
+<!--Okay, we are now going to be exploring features in github, everyone please title laptop screens-->
+
+### Github Issues (5 min; 11:05-11:10)
 
 An Issue is a note on a repo regarding some matter that needs attention. It could be a bug, a suggestion for a new feature, a question about the repo or code, etc! On GitHub you can also label, search and assign issues, which help with managing projects.
 
 In this example, we have a github practice repository, but it's completely empty and there is no README [main information page you see on github repos]! It needs more information so students know what the heck this repo is about. Let's open an Issue!
 
-### I-DO: Create a Github Issue
+### I-DO - Create a Github Issue
 
-Now this issue has a permanent home (URL) that you can reference even after it is closed. Next, we need to work towards adding a README and closing this issue. Let's make a new branch....
+For this lesson, I will be working with this github repo: https://github.com/beckybeauchamp1/I_Love_Github
 
-### Think/Pair/Share-1/3/6: Why Branches?  (15 min; 11:05-11:20)
+Now this issue has a permanent URL that you can reference even after it is closed. Next, we need to work towards adding a README and closing this issue. Let's make a new branch....
 
-We are going to start with reading [Git Branching - Basic Branching and Merging](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging/).  This is an introduction to branching.
+### Think/Pair/Share-1/3/6: Why Branches?  (15 min; 11:10-11:25)
 
-Instructions: Take 5 minutes to read up to Basic Merge Conflicts and STOP THERE (5 min).
+Instructions: We are going to start with reading [Git Branching - Basic Branching and Merging](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging/).  This is an introduction to branching.
 
-Take another minute to think about why branches/branching are important. Now, turn and talk with your neighbor and discuss your thoughts.
-
-Now, turn and share with your neighbor your thoughts, and we'll share what we feel is important.
+* Take 5 minutes to read up to Basic Merge Conflicts and STOP THERE (5 min).
+* Once the time is up, take another minute to think about why branches/branching are important and write down ideas.
+* Now, turn and talk with your neighbor and discuss your thoughts.
+* Together as a class, we'll share what we feel is important.
 
 Q. Why is branching an important part of git?
 
 ---
 > A. Branches are useful for many reasons, but some of the most common ones:
 
-> 1. EXPERIEMENTATION -To allow experimentation. By switching to a new branch, we can experiment,
+>
+1. Experimentation -To allow experimentation. By switching to a new branch, we can experiment,
 and if the experiment fails, we can delete it and easily switch back to master
 (or another branch of our choice). If it succeeds, we can merge those changes
 into master.
-2. WORKFLOW/COLLABORATION-To allow work to proceed on multiple features (or by multiple people) without
+2. Collaboration-To allow work to proceed on multiple features (or by multiple people) without
 interfering. When a feature is complete, it can be merged back into master.
-3. EASILY FIX BUGS-To allow easy bug fixes on a stable version while features are being developed.
+3. Easily Fix Bugs-To allow easy bug fixes on a stable version while features are being developed.
 
 <!--NEED VISUAL TOOL LESSON BRANCHES-->
 
-### What are Branches? (5 min; 11:20-11:25)
+### What are Branches? (5 min; 11:25-11:30)
 
 A branch in git is just a label on a particular commit in a repository, along
 with all of it's history (parent commits).
@@ -143,7 +152,7 @@ tip of the branch.
 
 > From [Atlassian - Git Branching Tutorial](https://www.atlassian.com/git/tutorials/using-branches/git-branch)
 
-### I-DO: Create a new branch (5 min; 11:25-11:30)
+### I-DO - Create a new branch (5 min; 11:30-11:35)
 
 Let's create a new branch called Add-Readme.
 
@@ -174,25 +183,27 @@ Now, we need to push this branch to our Repo Remote. We want to make sure to pus
 * `git branch -D <branch_to_delete>` - over-rides and deletes a non-merged branch
 * `git merge <branch_name>` - merges `<branch_name>` into the current branch, creating a new merge commit in the process
 
-### Pull Requests (10 min; 11:30-11:40)
+### Pull-Requests (10 min; 11:35-11:45)
 
-Pull Requests are an important part of collaborating on GitHub.
+Pull Requests aka "PRs" are an important part of collaborating on GitHub.
 
-By making a PR, you’re requesting that someone pull in your changes and merge them into their branch. A PR allows you to compare the content on two branches, and all the changes or diffs(differences) are highlighted in green and red.
+By making a PR, you’re requesting that someone pull in your changes and merge them into their branch. A PR allows you to compare the content on two branches, and all the changes or diffs (differences) are highlighted in green and red.
 
-As soon as you make a change, you can open a Pull Request. People use Pull Requests to start a discussion about commits (code review) even before the code is finished. This way you can get feedback as you go or help when you’re stuck.
+As soon as you make a change, you can open a Pull Request. People use Pull Requests to start a discussion about commits (code review) even before the code is finished. This way you can get feedback as you go or help from other developers/team members!
 
 It's good practice to even make a Pull Request for branches in your own repository and merge it yourself to get more comfortable with PRs!
 
 A Pull-Request is a way for us to incorporate our feature branch and work back into our master branch. You can merge any branch into your current branch with the git merge command locally. However, we are completing this process on our remote repo through a PR.
 
-### I-DO: Create a Pull-Request and Merge Changes
+### I-DO - Create a Pull-Request and Merge Changes
 
 Let's Review our Pull-Request, and Merge it back into the Master Branch. TADA! Now we have a readme.
 
-## Break (10 min; 11:40-11:50)
+<!--FIST TO FIVE, HOW ARE WE FEELING ABOUT BRANCHES AND PRS?  -->
 
-## OverView of GitHub Workflow(5 min; 11:50-11:55)
+## Break (10 min; 11:45-11:55)
+
+## Overview of GitHub Workflow (5 min; 11:55-12:00)
 > From [Github Guides](https://guides.github.com/introduction/flow/)
 
 To Recap, In Software Development, Github is very useful in managing and tracking updates and changes to our code.
@@ -224,7 +235,7 @@ Make changes/commits commits locally, then push your branch up to our remote rep
 6. Merge Branch into Master
 
 
-## YOU-DO - Pushing and PRs from Branches (10 min; 11:55-12:05)
+## YOU-DO - Pushing and PRs from Branches (15 min; 12:00-12:15)
 
 Many OSS projects request that you create pull requests from a non-master branch.
 
@@ -237,16 +248,26 @@ $ git push origin '<your_name>_suggestion'
 ```
 5. Create a pull request from that branch to the upstream (ga-dc) master branch
 
-## YOU-DO - Submit an Issue to this Repo (5 min; 12:05-12:10)
+## YOU-DO - Submit an Issue to this Repo (5 min; 12:15-12:20)
 
-Please Include Your LastName in the title of the Issue. Include in the content of the issue
+Please Include Your Last Name in the title of the Issue. For example "LastName Github-Lesson-Issue" Include in the content of the issue
 
-1. On a Scale from 1-5 how you are feeling about Git and Github
-2. What aspect of Git and Github are you still confused about
+1. On a scale from 1-5 how you are feeling about Git and Github
+2. On What aspect of Git and Github do you still have questions OR are you confused about
 
+> we include this format in our homework submissions
 
-## Closing (5 mins; 12:10-12:15)
+## Closing (5 mins; 12:20-12:25)
 
-Additional Exercises:
+Review Learning Objectives:
+* Describe the Differences between Git and Github
+* Explain what is an Upstream Repo
+* Fork, Clone, and Add WDI Curriculum as an Upstream Repo
+* Describe Github Features including Issues, Branches, and Pull-Requests
+* Fork and Clone Git Tricks Repo, Create a new Branch, and Make a Pull-Request
 
-* Please go back into Github and make sure your profile has your accurate FULL NAME, and a relevant Photo of you. Your presence on github is important! Potential employers will visit your profile!
+Additional Resources:
+* https://try.github.io/levels/1/challenges/1
+* http://pcottle.github.io/learnGitBranching/
+* https://robinpowered.com/blog/best-practice-system-for-organizing-and-tagging-github-issues/
+* http://blog.udacity.com/2015/06/a-beginners-git-github-tutorial.html
