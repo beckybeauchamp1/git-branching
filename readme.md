@@ -23,7 +23,7 @@ Review Git Basics
 1. What is the most common workflow for creating save points while working locally?
 2. What commands are used to share changes (commits) between repos?
 3. Describe the fork/clone model, and how it is used for HW submission.
-4. What are the differences between git and github?
+4. In your Own Words, What are the differences between git and github?
 
 <!--Introduction To New Material-->
 
@@ -93,7 +93,9 @@ $ git pull origin upstream
 
 ## Github Features: Issues, Branches, Pull-Requests, and Merging
 
-### Creating Issues on Github (5 min)
+<!--Okay, we are now going to be exploring features in github, everyone please title laptop screens-->
+
+### Github Issues (5 min)
 
 An Issue is a note on a repo regarding some matter that needs attention. It could be a bug, a suggestion for a new feature, a question about the repo or code, etc! On GitHub you can also label, search and assign issues, which help with managing projects.
 
@@ -110,8 +112,9 @@ Now this issue has a permanent URL that you can reference even after it is close
 Instructions: We are going to start with reading [Git Branching - Basic Branching and Merging](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging/).  This is an introduction to branching.
 
 * Take 5 minutes to read up to Basic Merge Conflicts and STOP THERE (5 min).
-* Now, take another minute to think about why branches/branching are important. Now, turn and talk with your neighbor and discuss your thoughts.
-* Now, turn and share with your neighbor your thoughts, and we'll share what we feel is important.
+* Once the time is up, take another minute to think about why branches/branching are important and write down ideas.
+* Now, turn and talk with your neighbor and discuss your thoughts.
+* Together as a class, we'll share what we feel is important.
 
 Q. Why is branching an important part of git?
 
@@ -175,13 +178,13 @@ Now, we need to push this branch to our Repo Remote. We want to make sure to pus
 * `git branch -D <branch_to_delete>` - over-rides and deletes a non-merged branch
 * `git merge <branch_name>` - merges `<branch_name>` into the current branch, creating a new merge commit in the process
 
-### Pull Requests (10 min)
+### Pull-Requests (10 min)
 
-Pull Requests are an important part of collaborating on GitHub.
+Pull Requests aka "PRs" are an important part of collaborating on GitHub.
 
-By making a PR, you’re requesting that someone pull in your changes and merge them into their branch. A PR allows you to compare the content on two branches, and all the changes or diffs(differences) are highlighted in green and red.
+By making a PR, you’re requesting that someone pull in your changes and merge them into their branch. A PR allows you to compare the content on two branches, and all the changes or diffs (differences) are highlighted in green and red.
 
-As soon as you make a change, you can open a Pull Request. People use Pull Requests to start a discussion about commits (code review) even before the code is finished. This way you can get feedback as you go or help when you’re stuck.
+As soon as you make a change, you can open a Pull Request. People use Pull Requests to start a discussion about commits (code review) even before the code is finished. This way you can get feedback as you go or help from other developers/team members!
 
 It's good practice to even make a Pull Request for branches in your own repository and merge it yourself to get more comfortable with PRs!
 
@@ -190,6 +193,8 @@ A Pull-Request is a way for us to incorporate our feature branch and work back i
 ### I-DO - Create a Pull-Request and Merge Changes
 
 Let's Review our Pull-Request, and Merge it back into the Master Branch. TADA! Now we have a readme.
+
+<!--FIST TO FIVE, HOW ARE WE FEELING ABOUT BRANCHES AND PRS?  -->
 
 ## Break (10 min)
 
@@ -240,11 +245,12 @@ $ git push origin '<your_name>_suggestion'
 
 ## YOU-DO - Submit an Issue to this Repo (5 min)
 
-Please Include Your LastName in the title of the Issue. Include in the content of the issue
+Please Include Your Last Name in the title of the Issue. For example "LastName Github-Lesson-Issue" Include in the content of the issue
 
-1. On a Scale from 1-5 how you are feeling about Git and Github
-2. What aspect of Git and Github are you still confused about
+1. On a scale from 1-5 how you are feeling about Git and Github
+2. On What aspect of Git and Github do you still have questions OR are you confused about
 
+> we include this format in our homework submissions
 
 ## Closing (5 mins)
 
