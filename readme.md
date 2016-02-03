@@ -36,7 +36,7 @@ Review Git Basics
 * Github is not only used for software development. It can be used for any collaboration projects. You can store text documents or other file types.
 * Most of repos on Github are Public. Github is Open Source to encourage collaboration
 
-## Turn and Talk:  Given what we just discussed, why is Github Important?  (5 min)
+## Turn and Talk:  Why are we using Github?  (5 min)
 
 Instructions: Turn and Talk to your neighbor for a minute and share your ideas. After a minute is up, we will discuss as a class your thoughts
 
