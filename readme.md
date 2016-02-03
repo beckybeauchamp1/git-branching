@@ -65,7 +65,7 @@ This remote is where we can pull from at any time, but do not have permission to
 
 <!--SHOW TRYING TO PUSH UP TO MASTER, DON'T PUSH UP -->
 
-## YOU-DO: Fork and Clone the Curriculum Repo (5 min)
+## YOU-DO - Fork and Clone the Curriculum Repo (5 min)
 
 Students should visit the [Curriculum](https://github.com/ga-dc/curriculum)'s page
 
@@ -73,7 +73,7 @@ Fork the Curriculum Repo to your personal account. Clone your fork to your compu
 
 NOTE: If you already have a curriculum folder in your ~/wdi folder, delete or rename it before you clone.
 
-## YOU-DO: Setup Upstream for Curriculum Repo (10 min)
+## YOU-DO - Setup Upstream for Curriculum Repo (10 min)
 1. Students go back to the [Curriculum](https://github.com/ga-dc/curriculum)'s page and copy the ssh clone url to the clipboard
 2. In our terminal, change directories into our local curriculum directory
 ```
@@ -99,7 +99,7 @@ An Issue is a note on a repo regarding some matter that needs attention. It coul
 
 In this example, we have a github practice repository, but it's completely empty and there is no README [main information page you see on github repos]! It needs more information so students know what the heck this repo is about. Let's open an Issue!
 
-### I-DO: Create a Github Issue
+### I-DO - Create a Github Issue
 
 For this lesson, I will be working with this github repo: https://github.com/beckybeauchamp1/I_Love_Github
 
@@ -144,7 +144,7 @@ tip of the branch.
 
 > From [Atlassian - Git Branching Tutorial](https://www.atlassian.com/git/tutorials/using-branches/git-branch)
 
-### I-DO: Create a new branch (5 min)
+### I-DO - Create a new branch (5 min)
 
 Let's create a new branch called Add-Readme.
 
@@ -187,7 +187,7 @@ It's good practice to even make a Pull Request for branches in your own reposito
 
 A Pull-Request is a way for us to incorporate our feature branch and work back into our master branch. You can merge any branch into your current branch with the git merge command locally. However, we are completing this process on our remote repo through a PR.
 
-### I-DO: Create a Pull-Request and Merge Changes
+### I-DO - Create a Pull-Request and Merge Changes
 
 Let's Review our Pull-Request, and Merge it back into the Master Branch. TADA! Now we have a readme.
 
