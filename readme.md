@@ -2,11 +2,11 @@
 
 ## Learning Objectives
 
-* Describe the differences between Git and Github
+* Describe the Differences between Git and Github
 * Explain what is an Upstream Repo
 * Fork, Clone, and Add WDI Curriculum as an Upstream Repo
-* Describe Github Features including Issues, Branches, and Pull Requests
-* Fork Github quiz repo, Create a solution_quiz_branch, and Create a Pull Request
+* Describe Github Features including Issues, Branches, and Pull-Requests
+* Fork and Clone Git Tricks Repo, Create a new Branch, and Make a Pull-Request
 
 ## Framing (10 min)
 
@@ -248,6 +248,15 @@ Please Include Your LastName in the title of the Issue. Include in the content o
 
 ## Closing (5 mins)
 
-Additional Exercises:
+Review Learning Objectives:
+* Describe the Differences between Git and Github
+* Explain what is an Upstream Repo
+* Fork, Clone, and Add WDI Curriculum as an Upstream Repo
+* Describe Github Features including Issues, Branches, and Pull-Requests
+* Fork and Clone Git Tricks Repo, Create a new Branch, and Make a Pull-Request
 
-* Please go back into Github and make sure your profile has your accurate FULL NAME, and a relevant Photo of you. Your presence on github is important! Potential employers will visit your profile!
+Additional Resources:
+* https://try.github.io/levels/1/challenges/1
+* http://pcottle.github.io/learnGitBranching/
+* https://robinpowered.com/blog/best-practice-system-for-organizing-and-tagging-github-issues/
+* http://blog.udacity.com/2015/06/a-beginners-git-github-tutorial.html
