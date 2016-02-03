@@ -100,7 +100,7 @@ $ git pull origin upstream
 
 <!--Okay, we are now going to be exploring features in github, everyone please title laptop screens-->
 
-### Github Issues (5 min; 11:05-11:10)
+### Github Issues (10 min; 11:05-11:15)
 
 An Issue is a note on a repo regarding some matter that needs attention. It could be a bug, a suggestion for a new feature, a question about the repo or code, etc! On GitHub you can also label, search and assign issues, which help with managing projects.
 
@@ -112,7 +112,7 @@ For this lesson, I will be working with this github repo: https://github.com/bec
 
 Now this issue has a permanent URL that you can reference even after it is closed. Next, we need to work towards adding a README and closing this issue. Let's make a new branch....
 
-### Think/Pair/Share-1/3/6: Why Branches?  (15 min; 11:10-11:25)
+### Think/Pair/Share-1/3/6: Why Branches?  (15 min; 11:15-11:30)
 
 Instructions: We are going to start with reading [Git Branching - Basic Branching and Merging](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging/).  This is an introduction to branching.
 
@@ -137,7 +137,7 @@ interfering. When a feature is complete, it can be merged back into master.
 
 <!--NEED VISUAL TOOL LESSON BRANCHES-->
 
-### What are Branches? (5 min; 11:25-11:30)
+### What are Branches? (5 min; 11:30-11:35)
 
 A branch in git is just a label on a particular commit in a repository, along
 with all of it's history (parent commits).
@@ -152,7 +152,7 @@ tip of the branch.
 
 > From [Atlassian - Git Branching Tutorial](https://www.atlassian.com/git/tutorials/using-branches/git-branch)
 
-### I-DO - Create a new branch (5 min; 11:30-11:35)
+### I-DO - Create a new branch (5 min; 11:35-11:40)
 
 Let's create a new branch called Add-Readme.
 
@@ -183,7 +183,7 @@ Now, we need to push this branch to our Repo Remote. We want to make sure to pus
 * `git branch -D <branch_to_delete>` - over-rides and deletes a non-merged branch
 * `git merge <branch_name>` - merges `<branch_name>` into the current branch, creating a new merge commit in the process
 
-### Pull-Requests (10 min; 11:35-11:45)
+### Pull-Requests (10 min; 11:40-11:50)
 
 Pull Requests aka "PRs" are an important part of collaborating on GitHub.
 
@@ -201,9 +201,9 @@ Let's Review our Pull-Request, and Merge it back into the Master Branch. TADA! N
 
 <!--FIST TO FIVE, HOW ARE WE FEELING ABOUT BRANCHES AND PRS?  -->
 
-## Break (10 min; 11:45-11:55)
+## Break (10 min; 11:50-12:00)
 
-## Overview of GitHub Workflow (5 min; 11:55-12:00)
+## Overview of GitHub Workflow (5 min; 12:00-12:05)
 > From [Github Guides](https://guides.github.com/introduction/flow/)
 
 To Recap, In Software Development, Github is very useful in managing and tracking updates and changes to our code.
@@ -235,7 +235,7 @@ Make changes/commits commits locally, then push your branch up to our remote rep
 6. Merge Branch into Master
 
 
-## YOU-DO - Pushing and PRs from Branches (15 min; 12:00-12:15)
+## YOU-DO - Pushing and PRs from Branches (15 min; 12:05-12:20)
 
 Many OSS projects request that you create pull requests from a non-master branch.
 
@@ -248,7 +248,7 @@ $ git push origin '<your_name>_suggestion'
 ```
 5. Create a pull request from that branch to the upstream (ga-dc) master branch
 
-## YOU-DO - Submit an Issue to this Repo (5 min; 12:15-12:20)
+## YOU-DO - Submit an Issue to this Repo (5 min; 12:20-12:25)
 
 Please Include Your Last Name in the title of the Issue. For example "LastName Github-Lesson-Issue" Include in the content of the issue
 
@@ -257,7 +257,7 @@ Please Include Your Last Name in the title of the Issue. For example "LastName G
 
 > we include this format in our homework submissions
 
-## Closing (5 mins; 12:20-12:25)
+## Closing (5 mins; 12:25-12:30)
 
 Review Learning Objectives:
 * Describe the Differences between Git and Github
