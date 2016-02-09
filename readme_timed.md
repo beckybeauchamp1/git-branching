@@ -8,7 +8,7 @@
 - Describe Github Workflows using issues, branches, and pull-requests
 - Resolve a merge conflict
 
-## Opening Framing (5 min)
+## Opening Framing (5 min; 10:00-10:05)
 
 Quickly review the basics of git:
 
@@ -42,19 +42,19 @@ locally?
   1. Git: Git is the version control software we use locally on our computers in order to keep track of our files, directories, and our modifications to them in a central repository.
   2. GitHub is a public hosting site for storing repositories. It's a place where all of our repos are stored remotely on a server.
 
-## What are Branches? (5 min)
+## What are Branches? (5 min; 10:05-10:10)
 
-  A branch in git is just a label on a  particular commit in a repository, along
+  A branch in git is just a label on a particular commit in a repository, along
   with all of it's history (parent commits). Branching helps us as developers to make experimental changes!
 
-## You Do: Research Git Branching (15 min)
+## You Do: Research Git Branching (15 min; 10:10-10:25)
 
 - Read the "Using Branches" of
 * [Atlassian - Git Branching Tutorial](https://www.atlassian.com/git/tutorials/using-branches)
   - Let me know when you have reached the "git merge" section
   - You will see references to Subversion(SVN).  SVN is an older version control system.  You will not need to know more than that regarding SVN to understand the comparisons.
 
-## Think/Pair/Share-1/3/6: Why Branches?  (10 min)
+## Think/Pair/Share-1/3/6: Why Branches?  (10 min; 10:25-10:35)
 
 You've had a brief overview.  Let's take a minute to think about why they are important, then share with your neighbor, and we'll share what we feel is important.
 
@@ -70,19 +70,19 @@ into master.
 interfering. When a feature is complete, it can be merged back into master.
 3. To allow easy bug fixes on a stable version while features are being developed.
 
-## How Git Branching Works (5 min)
+## How Git Branching Works (5 min; 10:35-10:40)
 
 What makes a branch special in git, is that we're always *on* a
 specific branch, and when we commit, the current branch label moves forward to
 the new commit. Another way to say that is the branch label always stays at the
 tip of the branch.
 
-![Git Branch Diagram](Git.jpg)
+![Git Branch Diagram](Git_Branching.jpg)
 > The diagram above visualizes a repository with two lines of development, one is the master branch, and the other a feature branch. By developing in branches, it’s not only possible to work on branches in parallel, but it also keeps the main master branch free from questionable code.
 
 > From [Atlassian - Git Branching Tutorial](https://www.atlassian.com/git/tutorials/using-branches/git-branch)
 
-## You Do: Branching Exercise (15 min)
+## You Do: Branching Exercise (15 min; 10:40-10:55)
 
 We are going to start with a [brief tutorial](http://pcottle.github.io/learnGitBranching/).  This is an introduction to branching.
 
@@ -104,9 +104,58 @@ We are going to start with a [brief tutorial](http://pcottle.github.io/learnGitB
   * `git branch -D <branch_to_delete>` - over-rides and deletes a non-merged branch
 * `git merge <branch_name>` - merges `<branch_name>` into the current branch, creating a new merge commit in the process
 
-## Break? (10 min)
+## Break? (10 min; 10:55-11:05)
 
-## Git Merging (10 min)
+## You Do: Pushing and PRs from Branches (10 min; 11:05-11:15)
+
+Many OSS projects request that you create pull requests from a non-master branch.
+
+1. Fork and Clone https://github.com/ga-dc/git-tricks.
+2. Create and switch to a branch called `<your_name>_suggestion`.
+3. Add your own "trick".
+4. Commit, and push that change to your remote called 'origin' (your fork)
+5. Create a pull request from that branch to the upstream (ga-dc) master branch
+
+## Overview of GitHub Workflow (10 min; 11:15-11:25)
+> From [Github Guides](https://guides.github.com/introduction/flow/)
+
+To Recap, In Software Development, Github is very useful in managing and tracking updates and changes to our code.
+
+![Github Workflows](github_workflows.jpg)
+
+### Discuss
+
+Discuss an idea for a new feature or any question about our project/application with our team and agree on what needs to be done.
+
+### Create an Issue
+
+An Issue is a note on a repo regarding some matter that needs attention. It could be a bug, a suggestion for a new feature, a question about the repo or code, etc! On GitHub you can also label, search and assign issues, which help with managing projects.
+
+Create a Github Issue for the feature. It's often useful to write the issue as brief functional spec, documenting the requirements as user stories.
+
+### Create a Branch
+
+Create a feature branch off the master to work on this issue. Our branch name should have meaning to the issue we are working on.
+
+```
+$ git checkout -b [name of branch that solves issue]
+
+```
+### Work and commit onto your branch
+
+Make changes/commits commits locally, then push your branch up to our remote repository
+
+### Open a Pull-Request or PR
+
+By making a PR, you’re requesting that someone pull in your changes and merge them into their branch. A PR allows you to compare the content on two branches, and all the changes or diffs (differences) are highlighted in green and red.
+
+As soon as you make a change, you can open a Pull Request. People use Pull Requests to start a discussion about commits (code review) even before the code is finished. This way you can get feedback as you go or help from other developers/team members!
+
+<!-- It's good practice to even make a Pull Request for branches in your own repository and merge it yourself to get more comfortable with PRs! -->
+
+### Merge Branch into Master
+
+## Git Merging (5 min; 11:25-11:30)
 
 If our feature branch and work is complete, we need to merge our changes back into our master branch. All we need to do is check out the master branch and then run the git merge command to integrate our feature branch:
 
@@ -116,6 +165,13 @@ $ git merge <feature_branch_name>
 ```
 Git creates a new snapshot from this merge and automatically creates a new commit that points to it (the merge commit).
 
+Additionally, we can merge our Remote Repos as well by issuing a PR, and merging on Github. If one of our team members are the ones merging their branches, we can pull down the changes and merge locally into our master:
+
+```
+$ git pull <name_of_remote> <branch>
+
+```
+
 Once merged, you can close the issue on github (if an issue was created), and delete the branch:
 
 ```
@@ -123,67 +179,20 @@ $ git branch -d <feature_branch_name>
 
 ```
 
-## You Do: Branching, Merging, and PRs (10 min)
+## You Do: A new project (10 min; 11:30-11:40)
 
-This exercise will give you practice in forking and cloning a remote repo, creating a branch, merging, and PRs.
+1. Create the structure
+   - In ~/wdi/sandbox.  Create a directory and initialize a new repository
+   - Create an index.html and commit
+   - Fill out html boilerplate and put some elements on the page then commit
+2. Add some styling
+    - Create and Checkout a branch called "style"
+    - Create a stylesheet link it to your html and add some styling to your page then commit
+3. Checkout back to your master branch
+    - Merge Changes From our style branch Back into our master branch
 
-1. Fork and Clone https://github.com/ga-dc/git-tricks.
-2. Create and switch to a branch called `<your_name>_suggestion`.
-3. Add your own "trick".
-4. Commit, and then checkout to master
-5. Merge changes from your `<your_name>_suggestion` branch back into master
-6. Push your master branch to your remote called 'origin' (your fork)
-7. Create a pull request from that branch to the upstream (ga-dc) master branch
+## Merge Conflicts (10 min; 11:40-11:50)
 
-## Overview of GitHub Workflow (10 min)
-> From [Github Guides](https://guides.github.com/introduction/flow/)
-
-To Recap, In Software Development, Github is very useful in managing and tracking updates and changes to our code.
-
-![Github Workflows](github_workflows.jpg)
-
-### 1. Discuss
-
-Discuss an idea for a new feature or any question about our project/application with our team and agree on what needs to be done.
-
-### 2. Create an Issue
-
-An Issue is a note on a repo regarding some matter that needs attention. It could be a bug, a suggestion for a new feature, a question about the repo or code, etc! On GitHub you can also label, search and assign issues, which help with managing projects.
-
-Create a Github Issue for the feature. It's often useful to write the issue as brief functional spec, documenting the requirements as user stories.
-
-### 3. Create a Branch
-
-Create a feature branch off the master to work on this issue. Our branch name should have meaning to the issue we are working on.
-
-```
-$ git checkout -b [name of branch that solves issue]
-
-```
-### 4. Work and commit onto your branch
-
-Make changes/commits commits locally, then push your branch up to our remote repository
-
-### 5. Open a Pull-Request or PR
-
-By making a PR, you’re requesting that someone pull in your changes and merge them into their branch. A PR allows you to compare the content on two branches, and all the changes or diffs (differences) are highlighted in green and red.
-
-As soon as you make a change, you can open a Pull Request. People use Pull Requests to start a discussion about commits (code review) even before the code is finished. This way you can get feedback as you go or help from other developers/team members!
-
-<!-- It's good practice to even make a Pull Request for branches in your own repository and merge it yourself to get more comfortable with PRs! -->
-
-### 6. Merge Branch into Master
-
-## Merge Conflicts (10 min)
-
-PLEASE NOTE: This process does not always go smoothly, but don't be scared!
-
-```
-Auto-merging <file_name>
-CONFLICT (content): Merge conflict in <file_name>
-Automatic merge failed; fix conflicts and then commit the result.
-
-```
 When we try to merge two branches (or commits from the same branch from a remote), changes may conflict. In this case, git will stop and ask us to fix the issues manually.
 
 A ‘conflict’ occurs when the commit that has to be merged has some change in the same place as the current commit.
@@ -204,9 +213,9 @@ This is the modified text
 ```
 >The HEAD is a reference to the last commit in your current checked out branch. Anything between <<<<< HEAD and ===== is the original code from your checked out branch, while anything beneath from ===== to >>>>>> are the changes introduced by the commit you are trying to merge
 
-## Break? (10 min)
+## Break? (10 min; 11:50-12:00)
 
-## You Do: Merge Conflicts (25 min)
+## You Do: Merge Conflicts (25 min; 12:00-12:25)
 
 1. Pair up with someone.
 - Pick someone as the 'primary', and the 'secondary'.
@@ -240,20 +249,7 @@ This is the modified text
 7. Pulling Changes:
   - Now, the Primary student should pull down the changes from the remote repo and work to resolve any merge conflicts
 
-## Additional Exercise - Branching and Merging Locally (10 min)
-
-  1. Create the structure
-     - In ~/wdi/sandbox.  Create a directory and initialize a new repository
-     - Create an index.html and commit
-     - Fill out html boilerplate and put some elements on the page then commit
-  2. Add some styling
-      - Create and Checkout a branch called "style"
-      - Create a stylesheet link it to your html and add some styling to your page then commit
-  3. Checkout back to your master branch
-      - Merge Changes From our style branch Back into our master branch
-
-
-## Closing (5 min)
+## Closing (5 min; 12:25-12:30)
 
 Review Learning Objectives:
 * Explain what a branch is in git
