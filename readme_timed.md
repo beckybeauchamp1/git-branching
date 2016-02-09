@@ -9,7 +9,7 @@
 * Fork and Clone Git Tricks Repo, Create a new Branch, and Make a Pull-Request
 * Create an Issue for this Lesson Repo
 
-## Framing (10 min)
+## Framing (10 min; 10:00-10:10)
 
 <!--OPENING  -->
 Review Git Basics
@@ -28,7 +28,7 @@ Review Git Basics
 
 <!--Introduction To New Material-->
 
-## Git versus Github (10 min)
+## Git versus Github (10 min; 10:10-10:20)
 
 * Git is the version control software we use locally on our computers in order to keep track of our files, directories, and our modifications to them in a central repository.
 * GitHub is a public hosting site for storing repositories. It's a place where all of our repos are stored remotely on a server.
@@ -36,11 +36,11 @@ Review Git Basics
 * Github is not only used for software development. It can be used for any collaboration projects. You can store text documents or other file types.
 * Most of repos on Github are Public. Github is Open Source to encourage collaboration
 
-## Turn and Talk:  Why are we using Github?  (5 min)
+## Turn and Talk:  Why are we using Github?  (5 min; 10:20-10:25)
 
 Instructions: Turn and Talk to your neighbor for a minute and share your ideas. After a minute is up, we will discuss as a class your thoughts
 
-### Why do we use Github? (5 min)
+### Why do we use Github? (5 min; 10:25-10:30)
 
 * Visual Interface to See and Navigate Through our Repositories
 * Provides a Remote Backup/Copy of our files
@@ -48,7 +48,7 @@ Instructions: Turn and Talk to your neighbor for a minute and share your ideas. 
 * Provides an issue tracking system
 * Place to Show Work off to Employers
 
-## Git Remote: Upstream and Pull (10 min)
+## Git Remote: Upstream and Pull (10 min; 10:30-10:40)
 
 <!--Does Anyone Remember How to Add a Remote Git Repo?-->
 
@@ -70,7 +70,7 @@ This remote is where we can pull from at any time, but do not have permission to
 
 <!--SHOW TRYING TO PUSH UP TO MASTER, DON'T PUSH UP -->
 
-## YOU-DO - Fork and Clone the Curriculum Repo (5 min)
+## YOU-DO - Fork and Clone the Curriculum Repo (5 min; 10:40-10:45)
 
 Students should visit the [Curriculum](https://github.com/ga-dc/curriculum)'s page
 
@@ -78,7 +78,7 @@ Fork the Curriculum Repo to your personal account. Clone your fork to your compu
 
 NOTE: If you already have a curriculum folder in your ~/wdi folder, delete or rename it before you clone.
 
-## YOU-DO - Setup Upstream for Curriculum Repo (10 min)
+## YOU-DO - Setup Upstream for Curriculum Repo (10 min; 10:45-10:55)
 1. Students go back to the [Curriculum](https://github.com/ga-dc/curriculum)'s page and copy the ssh clone url to the clipboard
 2. In our terminal, change directories into our local curriculum directory
 ```
@@ -94,13 +94,13 @@ $ cd curriculum
 $ git pull origin upstream
 ```
 
-## Break (10 min)
+## Break (10 min; 10:55-11:05)
 
 ## Github Features: Issues, Branches, Pull-Requests, and Merging
 
 <!--Okay, we are now going to be exploring features in github, everyone please title laptop screens-->
 
-### Github Issues (10 min)
+### Github Issues (10 min; 11:05-11:15)
 
 An Issue is a note on a repo regarding some matter that needs attention. It could be a bug, a suggestion for a new feature, a question about the repo or code, etc! On GitHub you can also label, search and assign issues, which help with managing projects.
 
@@ -112,7 +112,7 @@ For this lesson, I will be working with this github repo: https://github.com/bec
 
 Now this issue has a permanent URL that you can reference even after it is closed. Next, we need to work towards adding a README and closing this issue. Let's make a new branch....
 
-### Think/Pair/Share-1/3/6: Why Branches?  (15 min)
+### Think/Pair/Share-1/3/6: Why Branches?  (15 min; 11:15-11:30)
 
 Instructions: We are going to start with reading [Git Branching - Basic Branching and Merging](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging/).  This is an introduction to branching.
 
@@ -137,7 +137,7 @@ interfering. When a feature is complete, it can be merged back into master.
 
 <!--NEED VISUAL TOOL LESSON BRANCHES-->
 
-### What are Branches? (5 min)
+### What are Branches? (5 min; 11:30-11:35)
 
 A branch in git is just a label on a particular commit in a repository, along
 with all of it's history (parent commits).
@@ -152,7 +152,7 @@ tip of the branch.
 
 > From [Atlassian - Git Branching Tutorial](https://www.atlassian.com/git/tutorials/using-branches/git-branch)
 
-### I-DO - Create a new branch (5 min)
+### I-DO - Create a new branch (5 min; 11:35-11:40)
 
 Let's create a new branch called Add-Readme.
 
@@ -183,7 +183,7 @@ Now, we need to push this branch to our Repo Remote. We want to make sure to pus
 * `git branch -D <branch_to_delete>` - over-rides and deletes a non-merged branch
 * `git merge <branch_name>` - merges `<branch_name>` into the current branch, creating a new merge commit in the process
 
-### Pull-Requests (10 min)
+### Pull-Requests (10 min; 11:40-11:50)
 
 Pull Requests aka "PRs" are an important part of collaborating on GitHub.
 
@@ -201,9 +201,9 @@ Let's Review our Pull-Request, and Merge it back into the Master Branch. TADA! N
 
 <!--FIST TO FIVE, HOW ARE WE FEELING ABOUT BRANCHES AND PRS?  -->
 
-## Break (10 min)
+## Break (10 min; 11:50-12:00)
 
-## Overview of GitHub Workflow (5 min)
+## Overview of GitHub Workflow (5 min; 12:00-12:05)
 > From [Github Guides](https://guides.github.com/introduction/flow/)
 
 To Recap, In Software Development, Github is very useful in managing and tracking updates and changes to our code.
@@ -235,7 +235,7 @@ Make changes/commits commits locally, then push your branch up to our remote rep
 6. Merge Branch into Master
 
 
-## YOU-DO - Pushing and PRs from Branches (15 min)
+## YOU-DO - Pushing and PRs from Branches (15 min; 12:05-12:20)
 
 Many OSS projects request that you create pull requests from a non-master branch.
 
@@ -248,7 +248,7 @@ $ git push origin '<your_name>_suggestion'
 ```
 5. Create a pull request from that branch to the upstream (ga-dc) master branch
 
-## YOU-DO - Submit an Issue to this Repo (5 min)
+## YOU-DO - Submit an Issue to this Repo (5 min; 12:20-12:25)
 
 Please Include Your Last Name in the title of the Issue. For example "LastName Github-Lesson-Issue" Include in the content of the issue
 
@@ -257,7 +257,7 @@ Please Include Your Last Name in the title of the Issue. For example "LastName G
 
 > we include this format in our homework submissions
 
-## Closing (5 mins)
+## Closing (5 mins; 12:25-12:30)
 
 Review Learning Objectives:
 * Describe the Differences between Git and Github
